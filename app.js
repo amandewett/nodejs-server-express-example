@@ -55,7 +55,7 @@ app.use("/user", userRoute);
 app.use(function (req, res, next) {
     next(httpErrors(404));
 });
-const PORT = process.env.PORt || 3000;
+const PORT = process.env.PORT || 3000;
 //starting listening server using express
 app.listen(PORT, () => {
     console.log(`Server started at ${PORT} in ${process.env.ENV} environment`)
